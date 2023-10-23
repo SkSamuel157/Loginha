@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    +
+    <title>Document</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <h1 class="logo-nome">Moleton</h1>
+            </div>
+            <div class="buscar">
+                <input type="text" id="buscar-input" placeholder="Pesquisar Produto" oninput="buscarProduto()">
+                <button onclick="buscarSite()">Buscar</button>
+            </div>
+            <div id="carrinho-icon" onclick="toggleCarrinho()">
+                <div class="imagem">
+                    <img src=""> <!-- COLOCAR IMG NÃO ESQUECE -->
+                </div>
+                <span id="cont-carrinho">0</span>
+            </div>
+            <div id="carrinho-itens" style="display: none;">
+                <ul id="itens-lista"></ul>
+                <span id="preco-total">Valor Total: R$0, 00</span>
+                <button onclick="limparCarrinho()">Limpar Carrinho</button>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="container">
+            <div class="produtos">
+                <div class="produto-linha">
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src=""> <!-- COLOCAR IMG NÃO ESQUECE -->
+                        </div>
+                        <div class="infos">
+                            <h3>Moleton 1</h3>
+                            <p>R$ 80,00</p>
+                            <button onclick="addCarrinho('Moleton 1', 80.00)">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src=""> <!-- COLOCAR IMG NÃO ESQUECE -->
+                        </div>
+                        <div class="infos">
+                            <h3>Moleton 1</h3>
+                            <p>R$ 80,00</p>
+                            <button onclick="addCarrinho('Moleton 1', 80.00)">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src=""> <!-- COLOCAR IMG NÃO ESQUECE -->
+                        </div>
+                        <div class="infos">
+                            <h3>Moleton 1</h3>
+                            <p>R$ 80,00</p>
+                            <button onclick="addCarrinho('Moleton 1', 80.00)">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="produto-linha">
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src=""> <!-- COLOCAR IMG NÃO ESQUECE -->
+                        </div>
+                        <div class="infos">
+                            <h3>Moleton 1</h3>
+                            <p>R$ 80,00</p>
+                            <button onclick="addCarrinho('Moleton 1', 80.00)">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src=""> <!-- COLOCAR IMG NÃO ESQUECE -->
+                        </div>
+                        <div class="infos">
+                            <h3>Moleton 1</h3>
+                            <p>R$ 80,00</p>
+                            <button onclick="addCarrinho('Moleton 1', 80.00)">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src=""> <!-- COLOCAR IMG NÃO ESQUECE -->
+                        </div>
+                        <div class="infos">
+                            <h3>Moleton 1</h3>
+                            <p>R$ 80,00</p>
+                            <button onclick="addCarrinho('Moleton 1', 80.00)">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
